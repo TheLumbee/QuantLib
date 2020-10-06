@@ -92,7 +92,7 @@ theVegaBumps(bool factorwiseBumping, const ext::shared_ptr<MarketModel>& marketM
 
         Rate capStrike = marketModel->initialRates()[0];
 
-        for (Size i=0; i< numberRates-1; i=i+1)
+        for (Size i=0; i< numberRates-1; i++)
         {
             VolatilityBumpInstrumentJacobian::Cap nextCap;
             nextCap.startIndex_ = i;
